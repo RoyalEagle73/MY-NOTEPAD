@@ -6,7 +6,10 @@ import os
 main_application = tk.Tk()
 main_application.geometry('1200x800')
 main_application.title('Notepad')
-main_application.wm_iconbitmap('mainicon.ico')
+try:
+	main_application.iconbitmap('mainicon.ico')
+except Exception as e:
+	pass
 
 ########## main menu #############
 
@@ -61,7 +64,7 @@ color_icons = (light_default_icon ,light_plus_icon,dark_icon,red_icon,monokai_ic
 ## text  ,background 
 #  
 color_dict = {
-    'Light Default' :('#000000','fffffff'),
+    'Light Default' :('#000000','#ffffff'),
     'Light Plus' :('#474747','#e0e0e0'),
     'Dark' : ('#c4c4c4', '#2d2d2d'),
     'Red' : ('#2d2d2d','#ffe8e8'),
@@ -88,7 +91,10 @@ font_tuple = tk.font.families()
 font_family = tk.StringVar()
 font_box=ttk.Combobox(tool_bar, width=30 ,textvariable=font_family,state='readonly' )
 font_box['values']=font_tuple
-font_box.current(font_tuple.index('Arial'))
+try:
+	font_box.current(font_tuple.index('Arial'))
+except Exception as e:
+	pass
 font_box.grid(row=0,column=0,padx=5)
 
 ##size box
