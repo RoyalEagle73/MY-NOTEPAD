@@ -68,7 +68,7 @@ color_dict = {
     'Light Plus' :('#474747','#e0e0e0'),
     'Dark' : ('#c4c4c4', '#2d2d2d'),
     'Red' : ('#2d2d2d','#ffe8e8'),
-    'Monokai' : ('#d3b774','#474747'),
+    'Monokai' : ('#474747','#ffd09d'),
     'Night Blue' :('#ededed','#6b9dc2')
 }
 
