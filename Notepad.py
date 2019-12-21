@@ -7,7 +7,7 @@ main_application = tk.Tk()
 main_application.geometry('1200x800')
 main_application.title('Notepad')
 try:
-	main_application.iconbitmap('mainicon.ico')
+	main_application.wm_iconbitmap('mainicon.ico')
 except Exception as e:
 	pass
 
